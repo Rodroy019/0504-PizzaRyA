@@ -1,10 +1,16 @@
-import NavBar from './components/NavBar'
+import React from 'react'
+import NavBar from '../src/components/NavBar'
+import Rutas from '../src/routes/index'
+import PizzaContextProvider from '../src/contexts/PizzaContext'
 
 const App = () => {
   return (
-    <>
-      <NavBar />
-    </>
+    <PizzaContextProvider>
+      <div>
+        <NavBar />
+        <Rutas />
+      </div>
+    </PizzaContextProvider>
   )
 }
 

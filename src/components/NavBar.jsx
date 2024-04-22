@@ -13,7 +13,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='ms-auto'>
+          <Nav className='ms-auto text-white'>
             <img src='' height='40' className='d-inline-block' alt='Logo' />
             <p>Total: $ XXXXX</p>
           </Nav>
