@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar expand='lg' bg='primary' data-bs-theme='dark'>
       <Container>
         <Navbar.Brand href=''>
-          <img src='' height='40' className='d-inline-block align-top' alt='LogoPizza' />
+          <img src='src/assets/images/logo-pizza.png' height='60' className='d-inline-block align-center' alt='LogoPizza' />
           {' '} Pizzas Rya
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
