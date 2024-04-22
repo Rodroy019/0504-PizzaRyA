@@ -6,10 +6,8 @@ import PizzaContextProvider from '../src/contexts/PizzaContext'
 const App = () => {
   return (
     <PizzaContextProvider>
-      <div>
-        <NavBar />
-        <Rutas />
-      </div>
+      <NavBar />
+      <Rutas />
     </PizzaContextProvider>
   )
 }
