@@ -1,8 +1,9 @@
-# React + Vite
+Prueba - Mamma Mia!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripción:
+La pizzería italiana Mamma Mia! SPA le solicita realizar su aplicación web para mostrar y vender sus pizzas. Esta app deberá mostrar los distintos tipos de pizzas y sus ingredientes a través de una archivo JSON que estará a tu disposición en el material de apoyo y en donde encontrarás un arreglo de objetos correspondientes a cada tipo de pizza con su nombre, ingredientes, imagen, descripción, ID y precio.
+La aplicación debe incluir un carrito y una vista de detalle por cada pizza seleccionada en el catálogo ubicado en la vista principal.
+Para la estética de esta aplicación contará con algunas imágenes de referencia, sin embargo, el diseño quedará a su criterio siempre y cuando cumpla con los requerimientos.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Imagen del Home](src/assets/readme/Home.png)
+![Imagen de Pizza al detalle](src/assets/readme/InfoPizza.png)

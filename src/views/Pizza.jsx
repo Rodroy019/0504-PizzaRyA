@@ -5,17 +5,14 @@ import { Card, ListGroup, Button } from 'react-bootstrap'
 import NotFound from './NotFound'
 
 const Pizza = () => {
-  const { name } = useParams() // Se obtine el parametro 'name' de la URL
-  const { pizzas } = useContext(PizzaContext) // Se obtine el contexto con la lista de pizzas
-  // Encontrar la pizza especifica por su nombre
+  const { name } = useParams()
+  const { pizzas } = useContext(PizzaContext)
   const selectedPizza = pizzas.find(pizza => pizza.name === name)
 
-  // Si no se encuentra la pizza, mostrar mensaje de error
   if (!selectedPizza) {
     return <NotFound />
   }
 
-  // Renderiza el componente solo si el nombre de la pizza coincide
   return (
     <div className='container py-4'>
       <div className='card' style={{ width: '60rem' }}>
