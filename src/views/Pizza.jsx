@@ -1,6 +1,10 @@
+import { useParams } from 'react-router-dom'
+
 const Pizza = () => {
+  const { name } = useParams()
+
   return (
-    <div>Pizza</div>
+    <div>Pizza {name}</div>
   )
 }
 

@@ -6,8 +6,8 @@ const Rutas = () => {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/pizza' element={<Pizza />} />
-        <Route path='/carrito/:name' element={<Carrito />} />
+        <Route path='/pizza/:name' element={<Pizza />} />
+        <Route path='/carrito' element={<Carrito />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>

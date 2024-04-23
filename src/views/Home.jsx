@@ -1,10 +1,24 @@
+import CardPizza from '../components/CardPizza'
+import { useContext } from 'react'
+import { PizzaContext } from '../contexts/PizzaContext'
+import Container from 'react-bootstrap/Container'
+
 const Home = () => {
+  const { pizzas } = useContext(PizzaContext)
   return (
-    <div className='banner'>
-      <h2>Pizzería RyA</h2>
-      ¡Tenemos las mejores pizzas que puedas comer!
-      <hr />
-    </div>
+    <section>
+      <div className='banner'>
+        <h1>Pizzería RyA</h1>
+        ¡Tenemos las mejores pizzas que puedas comer!
+      </div>
+      <Container fluid>
+        <div className='row'>
+          {pizzas.map(pzz => (
+            <CardPizza key={pzz.id} pzz={pzz} />
+          ))}
+        </div>
+      </Container>
+    </section>
   )
 }
 
