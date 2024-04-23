@@ -12,14 +12,14 @@ const CardPizza = ({ pzz }) => {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={pzz.img} />
         <Card.Body>
-          <Card.Title>{pzz.name}</Card.Title>
+          <Card.Title className='text-capitalize'>{pzz.name}</Card.Title>
         </Card.Body>
         <ListGroup className='list-group-flush'>
           <ListGroup.Item>
             Ingredientes:
             <ul>
               {pzz.ingredients.map((ing) => (
-                <li key={ing}>{ing}</li>
+                <li key={ing} className='text-capitalize'>{ing}</li>
               ))}
             </ul>
           </ListGroup.Item>
@@ -27,8 +27,12 @@ const CardPizza = ({ pzz }) => {
             Precio $ {pzz.price}
           </ListGroup.Item>
           <ListGroup.Item>
-            <Button variant='primary' onClick={() => HandleClick(pzz.name)}>Ver Mas</Button>
-            <Button variant='danger'>Agregar</Button>
+            <div className='row justify-content-around'>
+              <div className='col-5'><Button variant='primary' onClick={() => HandleClick(pzz.name)}>Ver Mas</Button>
+              </div>
+              <div className='col-5'><Button variant='danger'>Agregar</Button></div>
+
+            </div>
           </ListGroup.Item>
         </ListGroup>
       </Card>

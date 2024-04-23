@@ -29,22 +29,21 @@ const Pizza = () => {
           </div>
           <div className='col-6'>
             <Card.Body>
-              <Card.Title><h2>{selectedPizza.name}</h2></Card.Title>
+              <Card.Title><h2 className='text-center text-uppercase'>Pizza {selectedPizza.name}</h2></Card.Title>
             </Card.Body>
             <ListGroup className='list-group-flush'>
               <ListGroup.Item>
-                Descripción: {selectedPizza.desc}
+                {selectedPizza.desc}
               </ListGroup.Item>
               <ListGroup.Item>
-                Ingredientes:
                 <ul>
                   {selectedPizza.ingredients.map((ing, index) => (
-                    <li key={index}>{ing}</li>
+                    <li key={index} className='text-capitalize'>{ing}</li>
                   ))}
                 </ul>
               </ListGroup.Item>
               <ListGroup.Item>
-                <div className='row justify-content-between'>
+                <div className='row justify-content-around'>
                   <div className='col-4 active'>
                     Precio: $ {selectedPizza.price}
                   </div>
