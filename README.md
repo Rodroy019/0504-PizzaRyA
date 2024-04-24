@@ -1,6 +1,6 @@
 # Prueba - Mamma Mia!
 
-## Habilidades
+## Habilidades:
 - Utilizar React Router para controlar rutas y redireccionamientos.
 - Utilizar Context API almacenar y modificar el estado global.
 
@@ -9,9 +9,14 @@ La pizzería italiana Mamma Mia! SPA le solicita realizar su aplicación web par
 La aplicación debe incluir un carrito y una vista de detalle por cada pizza seleccionada en el catálogo ubicado en la vista principal.
 Para la estética de esta aplicación contará con algunas imágenes de referencia, sin embargo, el diseño quedará a su criterio siempre y cuando cumpla con los requerimientos.
 
-## Imagenes
+## Imagenes:
+### Imagen del Home
 ![Imagen del Home](src/assets/readme/inicio.png)
+### Imagen de Pizza al Detalle
 ![Imagen de Pizza al detalle](src/assets/readme/infoPizza.png)
+### Imagen del Carro de Compras
 ![Imagen del Carro de Compras](src/assets/readme/inicio.png)
+### Imagen del Carro Vacio
 ![Imagen del Carro Vacio](src/assets/readme/carroVacio.png)
+### Imagen del error 404
 ![Imagen del error 404](src/assets/readme/404.png)
