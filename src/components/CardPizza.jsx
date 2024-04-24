@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import { Card, ListGroup, Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import { PizzaContext } from '../contexts/PizzaContext'
 
 const CardPizza = ({ pzz }) => {
+  const { addPizza } = useContext(PizzaContext)
   const navigate = useNavigate()
 
   const HandleClick = (namePizza) => {
@@ -30,8 +33,7 @@ const CardPizza = ({ pzz }) => {
             <div className='row justify-content-around'>
               <div className='col-5'><Button variant='primary' onClick={() => HandleClick(pzz.name)}>Ver Mas</Button>
               </div>
-              <div className='col-5'><Button variant='danger'>Agregar</Button></div>
-
+              <div className='col-5'><Button variant='danger' onClick={() => addPizza(pzz.id)}>Agregar</Button></div>
             </div>
           </ListGroup.Item>
         </ListGroup>

@@ -1,8 +1,11 @@
+import { useContext } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import { PizzaContext } from '../contexts/PizzaContext'
 
 const NavBar = () => {
   const HandleMenu = ({ isActive }) => isActive ? 'nav-link active' : 'nav-link'
+  const { total } = useContext(PizzaContext)
 
   return (
     <Navbar expand='lg' bg='primary' data-bs-theme='dark'>
@@ -16,7 +19,7 @@ const NavBar = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto text-white'>
             <NavLink className={HandleMenu} to='./carrito'>
-              <i class='fa-solid fa-cart-shopping' /> Total: $ XXXXX
+              <i className='fa-solid fa-cart-shopping' /> Total: $ {total}
             </NavLink>
           </Nav>
 

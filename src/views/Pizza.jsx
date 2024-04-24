@@ -6,8 +6,8 @@ import NotFound from './NotFound'
 
 const Pizza = () => {
   const { name } = useParams()
-  const { pizzas } = useContext(PizzaContext)
-  const selectedPizza = pizzas.find(pizza => pizza.name === name)
+  const { carroPizzas, addPizza } = useContext(PizzaContext)
+  const selectedPizza = carroPizzas.find(pizza => pizza.name === name)
 
   if (!selectedPizza) {
     return <NotFound />
@@ -34,8 +34,8 @@ const Pizza = () => {
               </ListGroup.Item>
               <ListGroup.Item>
                 <ul>
-                  {selectedPizza.ingredients.map((ing, index) => (
-                    <li key={index} className='text-capitalize'>{ing}</li>
+                  {selectedPizza.ingredients.map((ing) => (
+                    <li key={ing} className='text-capitalize'>{ing}</li>
                   ))}
                 </ul>
               </ListGroup.Item>
@@ -43,11 +43,12 @@ const Pizza = () => {
                 <div className='row justify-content-around'>
                   <div className='col-4 active'>
                     Precio: $ {selectedPizza.price}
+                    cantidad {selectedPizza.cantidad}
                   </div>
                   <div className='col-4'>
                     <div className='row'>
                       <Link className='btn btn-warning' to='/'>Volver</Link>
-                      <Button variant='danger'>Agregar</Button>
+                      <Button variant='danger' onClick={() => addPizza(selectedPizza.id)}>Agregar</Button>
                     </div>
                   </div>
                 </div>
