@@ -10,5 +10,8 @@ La aplicación debe incluir un carrito y una vista de detalle por cada pizza sel
 Para la estética de esta aplicación contará con algunas imágenes de referencia, sin embargo, el diseño quedará a su criterio siempre y cuando cumpla con los requerimientos.
 
 ## Imagenes
-![Imagen del Home](src/assets/readme/Home.png)
-![Imagen de Pizza al detalle](src/assets/readme/InfoPizza.png)
+![Imagen del Home](src/assets/readme/inicio.png)
+![Imagen de Pizza al detalle](src/assets/readme/infoPizza.png)
+![Imagen del Carro de Compras](src/assets/readme/inicio.png)
+![Imagen del Carro Vacio](src/assets/readme/carroVacio.png)
+![Imagen del error 404](src/assets/readme/404.png)

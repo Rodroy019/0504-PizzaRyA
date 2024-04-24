@@ -43,7 +43,6 @@ const Pizza = () => {
                 <div className='row justify-content-around'>
                   <div className='col-4 active'>
                     Precio: $ {selectedPizza.price}
-                    cantidad {selectedPizza.cantidad}
                   </div>
                   <div className='col-4'>
                     <div className='row'>
