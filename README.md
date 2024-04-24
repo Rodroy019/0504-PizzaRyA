@@ -13,7 +13,7 @@ Para la estética de esta aplicación contará con algunas imágenes de referenc
 ### Imagen del Home
 ![Imagen del Home](src/assets/readme/inicio.png)
 ### Imagen de Pizza al Detalle
-![Imagen de Pizza al detalle](src/assets/readme/infoPizza.png)
+![Imagen de Pizza al detalle](src/assets/readme/InfoPizza.png)
 ### Imagen del Carro de Compras
 ![Imagen del Carro de Compras](src/assets/readme/inicio.png)
 ### Imagen del Carro Vacio
