@@ -36,6 +36,14 @@ const PizzaContextProvider = ({ children }) => {
     setTotal(newTotal)
   }
 
+  const allClean = () => {
+    const updatedCarroPizzas = carroPizzas.map((pizza) => {
+      return { ...pizza, cantidad: 0 }
+    })
+    setCarroPizzas(updatedCarroPizzas)
+    setTotal(0)
+  }
+
   const getData = async () => {
     try {
       const data = await fetch(URL).then(res => res.json())
@@ -52,7 +60,7 @@ const PizzaContextProvider = ({ children }) => {
   }, [])
 
   return (
-    <PizzaContext.Provider value={{ pizzas, setPizzas, carroPizzas, setCarroPizzas, total, setTotal, addPizza, removePizza }}>
+    <PizzaContext.Provider value={{ pizzas, carroPizzas, total, addPizza, removePizza, allClean }}>
       {children}
     </PizzaContext.Provider>
   )

@@ -18,5 +18,7 @@ Para la estética de esta aplicación contará con algunas imágenes de referenc
 ![Imagen del Carro de Compras](src/assets/readme/vistaCarro.png)
 ### Imagen del Carro Vacio
 ![Imagen del Carro Vacio](src/assets/readme/carroVacio.png)
+### Imagen de Compras Exitosa
+![Imagen del Carro de Compras](src/assets/readme/vistaCompra.png)
 ### Imagen del error 404
 ![Imagen del error 404](src/assets/readme/404.png)

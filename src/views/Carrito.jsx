@@ -35,9 +35,9 @@ const Carrito = () => {
                       <img height='50px' src={pizza.img} />
                       <h5 className='ps-2 m-0 text-capitalize'>{pizza.name}</h5>
                       <h5 className='ms-auto pe-2 m-0'>$ {(pizza.price / 1000).toFixed(3)}</h5>
-                      <button className='btn btn-danger' onClick={() => removePizza(pizza.id)}>-</button>
+                      <button className='btn btn-primary' onClick={() => removePizza(pizza.id)}>-</button>
                       <h5 className='px-3 m-0 text-center'>{pizza.cantidad}</h5>
-                      <button className='btn btn-secondary' onClick={() => addPizza(pizza.id)}>+</button>
+                      <button className='btn btn-danger' onClick={() => addPizza(pizza.id)}>+</button>
                     </div>
                   </li>
                   )
@@ -48,7 +48,7 @@ const Carrito = () => {
           <div className='text-center'>
             <h2 className='pb-3'>Total a Pagar: $ {(total / 1000).toFixed(3)}</h2>
             <div className='d-flex justify-content-center column-gap-5'>
-              <button type='button' className='btn btn-primary'>Ir a Pagar</button>
+              <Link type='button' className='btn btn-success' to='/compra'>Ir a Pagar</Link>
             </div>
           </div>
         </div>
