@@ -15,7 +15,7 @@ Para la estética de esta aplicación contará con algunas imágenes de referenc
 ### Imagen de Pizza al Detalle
 ![Imagen de Pizza al detalle](src/assets/readme/InfoPizza.png)
 ### Imagen del Carro de Compras
-![Imagen del Carro de Compras](src/assets/readme/inicio.png)
+![Imagen del Carro de Compras](src/assets/readme/vistaCarro.png)
 ### Imagen del Carro Vacio
 ![Imagen del Carro Vacio](src/assets/readme/carroVacio.png)
 ### Imagen del error 404
