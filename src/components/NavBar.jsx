@@ -8,6 +8,7 @@ const NavBar = () => {
   const { total } = useContext(PizzaContext)
 
   return (
+    // Se renderiza NavBar con el total en ventas acumulada
     <Navbar expand='lg' bg='primary' data-bs-theme='dark'>
       <Container>
         <Navbar.Brand href=''>
@@ -22,7 +23,6 @@ const NavBar = () => {
               <i className='fa-solid fa-cart-shopping' /> Total: $ {total}
             </NavLink>
           </Nav>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>

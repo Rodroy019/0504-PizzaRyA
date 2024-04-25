@@ -8,9 +8,11 @@ const CardPizza = ({ pzz }) => {
   const navigate = useNavigate()
 
   const HandleClick = (namePizza) => {
+    // Función navigate para redirigir a la vista de Pizzas con su detalle
     navigate(`/pizza/${namePizza}`)
   }
   return (
+    // Se renderiza las cartas con la info correspondiente
     <div className='col-sm-6 col-lg-3 mb-4 mt-4'>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={pzz.img} />

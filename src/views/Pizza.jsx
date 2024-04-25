@@ -9,11 +9,14 @@ const Pizza = () => {
   const { carroPizzas, addPizza } = useContext(PizzaContext)
   const selectedPizza = carroPizzas.find(pizza => pizza.name === name)
 
-  if (!selectedPizza) {
+  if (!selectedPizza) { // Al no tener info se cargara error 404
     return <NotFound />
   }
 
   return (
+    // se rendizara la card de forma vertical, mostrando la imagen al lado izquierdo
+    // y la info de la pizza al lado derecho en forma de cascada
+    // los botones, Volver redirige al inicio y agregar usa la funcion addPizza
     <div className='container py-4'>
       <div className='card' style={{ width: '60rem' }}>
         <div className='row'>
@@ -46,7 +49,7 @@ const Pizza = () => {
                   </div>
                   <div className='col-4'>
                     <div className='row'>
-                      <Link className='btn btn-warning' to='/'>Volver</Link>
+                      <Link type='button' className='btn btn-warning' to='/'>Volver</Link>
                       <Button variant='danger' onClick={() => addPizza(selectedPizza.id)}>Agregar</Button>
                     </div>
                   </div>

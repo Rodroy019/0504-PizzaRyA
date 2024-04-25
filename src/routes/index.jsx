@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Pizza, Home, NotFound, Carrito, Compra } from '../views'
 
 const Rutas = () => {
+  // se cargan las rutas a utilizar
   return (
     <>
       <Routes>

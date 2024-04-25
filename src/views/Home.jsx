@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 const Home = () => {
   const { pizzas } = useContext(PizzaContext)
   return (
+    // se renderiza banner y se llama al componente CardPizza para mostrar el menu de pizzas
     <section>
       <div className='banner'>
         <h1>Pizzería RyA</h1>

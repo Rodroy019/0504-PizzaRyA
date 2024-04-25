@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 const Carrito = () => {
   const { carroPizzas, total, addPizza, removePizza } = useContext(PizzaContext)
 
-  let contenido
+  let contenido // se declara variable para luego renderizar
 
   if (total === 0) {
+    // Al no tener pizzas cargadas,
+    // se mostrara carro vacio con con mensaje correspondiente y boton para volver al inicio
     contenido = (
       <div className='container-fluid col-7'>
         <div className='mt-5 p-5 bg-light-subtle border d-flex flex-row align-items-center'>
@@ -24,6 +26,9 @@ const Carrito = () => {
     )
   } else {
     contenido = (
+      // Al tener pizzas agregadas, se rendizara la lista con las pizzas agregadas
+      // se puede manipular los botones + y -
+      // Boton de "Ir a pagar" te lleva a la vista Compra
       <div className='container-fluid col-7'>
         <div className='mt-3 p-3 bg-light'>
           <ul className='list-group list-group-flush'>
@@ -57,6 +62,7 @@ const Carrito = () => {
   }
 
   return (
+    // se carga contenido dependiendo de si esta cargado el carro de compra
     <div>
       {contenido}
     </div>
